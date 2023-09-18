@@ -1,12 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+
+import { Header } from '../Pages/Shared';
 
 function MainLayout() {
      return (
-          <div>
-               <h1>
-                    hello world
-               </h1>
-          </div>
+          <>
+               <Header />
+               <Outlet />
+          </>
      )
 }
 
