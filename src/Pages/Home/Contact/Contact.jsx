@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
      return (
-          <section className='w-full h-[400px] bg-yellow px-24 py-10 flex items-start justify-center gap-16'>
+          <section className='w-full h-[400px] bg-yellow px-24 py-10 flex items-start justify-center gap-x-56'>
                <div className="">
                     <h2 className='text-3xl leading-normal font-semibold mb-8'>
                          Let us handle your <br /> project, professionally.
@@ -26,6 +26,12 @@ export default function Contact() {
                          id=""
                          placeholder="your name / company's name"
                     />
+                    <textarea
+                         className='resize-none rounded w-96 h-40 focus:outline-none text-sm px-5 py-4 placeholder:text-sm placeholder:font-light placeholder:capitalize'
+                         name=""
+                         id=""
+                         placeholder='your massage'
+                    ></textarea>
                </div>
           </section>
      )
