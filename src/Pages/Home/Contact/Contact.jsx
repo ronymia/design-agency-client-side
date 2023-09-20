@@ -11,9 +11,21 @@ export default function Contact() {
                          With well written codes, we build amazing apps for all <br /> platforms, mobile and web apps in general.
                     </p>
                </div>
-               <div className="">
-                    <input type="text" name="" id="" />
-                    <input type="text" name="" id="" />
+               <div className="flex flex-col gap-y-4">
+                    <input
+                         className='w-96 h-11 rounded focus:outline-none text-sm px-4 py-3 placeholder:text-xs placeholder:font-light placeholder:capitalize'
+                         type="text"
+                         name=""
+                         id=""
+                         placeholder='your email address'
+                    />
+                    <input
+                         className='w-96 h-11 rounded focus:outline-none text-sm px-4 py-3 placeholder:text-xs placeholder:font-light placeholder:capitalize'
+                         type="text"
+                         name=""
+                         id=""
+                         placeholder="your name / company's name"
+                    />
                </div>
           </section>
      )
