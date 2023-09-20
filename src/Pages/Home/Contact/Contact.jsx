@@ -1,6 +1,18 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function Contact() {
+     const {
+          register,
+          handleSubmit,
+          watch,
+          formState: { errors },
+     } = useForm()
+
+     const onSubmit = (data) => {
+          console.log(data)
+     }
+
      return (
           <section className='w-full h-[400px] bg-yellow px-24 py-10 flex items-start justify-center gap-x-56'>
                <div className="">
@@ -13,6 +25,7 @@ export default function Contact() {
                </div>
                <div className="">
                     <form action=""
+                         onSubmit={handleSubmit(onSubmit)}
                          className='flex flex-col gap-y-4'
                     >
                          <input
@@ -21,6 +34,7 @@ export default function Contact() {
                               name=""
                               id=""
                               placeholder='your email address'
+                              {...register("email")}
                          />
                          <input
                               className='w-96 h-11 rounded focus:outline-none text-sm px-4 py-3 placeholder:text-xs placeholder:font-light placeholder:capitalize'
@@ -28,14 +42,16 @@ export default function Contact() {
                               name=""
                               id=""
                               placeholder="your name / company's name"
+                              {...register("name")}
                          />
                          <textarea
                               className='resize-none rounded w-96 h-40 focus:outline-none text-sm px-5 py-4 placeholder:text-sm placeholder:font-light placeholder:capitalize'
                               name=""
                               id=""
-                              placeholder='your massage'
+                              placeholder='your message'
+                              {...register("message")}
                          ></textarea>
-                         <input type="button" value="send"
+                         <input type="submit" value="send"
                               className="px-[35px] py-[10px] bg-primary text-white rounded-[5px] 
                               cursor-pointer uppercase tracking-widest"
                          />
