@@ -14,7 +14,7 @@ export default function Contact() {
      }
 
      return (
-          <section className='w-full h-[400px] bg-yellow px-24 py-10 flex items-start justify-center gap-x-56'>
+          <section className='w-full h-[500px] bg-yellow px-24 pt-10 pb-24 flex items-start justify-center gap-x-56 relative'>
                <div className="">
                     <h2 className='text-3xl leading-normal font-semibold mb-8'>
                          Let us handle your <br /> project, professionally.
@@ -57,6 +57,9 @@ export default function Contact() {
                          />
                     </form>
                </div>
+               <p className='absolute bottom-10'>
+                    copyright Orange Labs 2023
+               </p>
           </section>
      )
 }
