@@ -14,7 +14,7 @@ export default function Services() {
      });
 
      return (
-          <section className="flex flex-col items-center justify-center my-20">
+          <section className="flex flex-col items-center justify-center mt-20 mb-10">
                <h2 className="block text-center text-4xl font-semibold text-primary">
                     Provide awesome <span className="text-secondary">services</span>
                </h2>

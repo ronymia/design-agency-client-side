@@ -37,7 +37,7 @@ export default function Testimonial() {
                <h4 className="block text-center text-2xl text-primary font-semibold capitalize">
                     Clients <span className="text-secondary">Feedback</span>
                </h4>
-               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-[100px]">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12 mb-[100px]">
                     {
                          reviews.map(review =>
                               <div
