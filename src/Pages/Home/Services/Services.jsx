@@ -22,13 +22,15 @@ export default function Services() {
                     {
                          services.map(service =>
                               <div key={service._id}
-                                   className="serviceShadow rounded-[10px] p-9 transition-shadow duration-600"
+                                   className="serviceShadow rounded-[10px] p-9 transition-shadow duration-600 flex flex-col items-center justify-center"
                               >
-                                   <img src={service.image} alt="service" />
+                                   <img
+                                        className='w-1/2'
+                                        src={service.image} alt="service" />
                                    <h3 className="block text-center text-xl font-semibold text-primary my-4">
                                         {service.name}
                                    </h3>
-                                   <p className="">{service.description}</p>
+                                   <p className="text-sm leading-6">{service.description}</p>
                               </div>
                          )
                     }
