@@ -4,6 +4,7 @@ import Client from '../Client/Client';
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 import Contact from '../Contact/Contact';
+import OurWork from '../OurWork/OurWork';
 
 export default function Home() {
      return (
@@ -11,6 +12,7 @@ export default function Home() {
                <Banner />
                <Client />
                <Services />
+               <OurWork />
                <Testimonial />
                <Contact />
           </div>
