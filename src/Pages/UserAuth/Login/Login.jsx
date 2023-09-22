@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 export default function Login() {
      const { register, handleSubmit, reset } = useForm();
@@ -29,6 +30,9 @@ export default function Login() {
                          className='bg-primary text-white w-96 h-11 rounded font-semibold leading-7 tracking-widest cursor-pointer'
                     />
                </form>
+
+               {/* social login */}
+               <SocialLogin />
           </div>
      )
 }
