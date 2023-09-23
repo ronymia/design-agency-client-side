@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { Link } from 'react-router-dom';
 
-export default function Login() {
+export default function Register() {
      const { register, handleSubmit, reset } = useForm();
 
      const onSubmit = (data) => {
@@ -19,15 +19,25 @@ export default function Login() {
                >
                     <input type="text"
                          className='w-96 h-11 rounded focus:outline-none border border-[#C7C7C7] px-2 py-1 text-sm placeholder:capitalize placeholder:font-light'
+                         placeholder='your name'
+                         {...register("name")}
+                    />
+                    <input type="text"
+                         className='w-96 h-11 rounded focus:outline-none border border-[#C7C7C7] px-2 py-1 text-sm placeholder:capitalize placeholder:font-light'
                          placeholder='your email'
                          {...register("email")}
                     />
                     <input type="text"
                          className='w-96 h-11 rounded focus:outline-none border border-[#C7C7C7] px-2 py-1 text-sm placeholder:capitalize placeholder:font-light'
-                         placeholder='your password'
+                         placeholder='password'
                          {...register("password")}
                     />
-                    <input type="submit" value="Login"
+                    <input type="text"
+                         className='w-96 h-11 rounded focus:outline-none border border-[#C7C7C7] px-2 py-1 text-sm placeholder:capitalize placeholder:font-light'
+                         placeholder='confirm password'
+                         {...register("confirmPassword")}
+                    />
+                    <input type="submit" value="Register"
                          className='bg-primary text-white w-96 h-11 rounded font-semibold leading-7 tracking-widest cursor-pointer'
                     />
                </form>
@@ -37,7 +47,7 @@ export default function Login() {
 
                {/* register toggle */}
                <h4>
-                    Don’t have an account? <Link to={"register"} className='text-[#3F90FC] cursor-pointer hover:underline'>Create an account</Link>
+                    Already have an account ? <Link to={"login"} className='text-[#3F90FC] cursor-pointer hover:underline'>Login Here</Link>
                </h4>
           </div>
      )

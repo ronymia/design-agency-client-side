@@ -34,7 +34,7 @@ function Header() {
                          Contact us</NavLink>
                </li>
                <li className="px-[35px] py-[10px] bg-primary text-white rounded-[5px] cursor-pointer">
-                    <Link to={"/login"}>Login</Link>
+                    <Link to={"auth/login"}>Login</Link>
                </li>
           </>;
 
