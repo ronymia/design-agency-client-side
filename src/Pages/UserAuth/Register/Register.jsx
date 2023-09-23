@@ -47,7 +47,7 @@ export default function Register() {
 
                {/* register toggle */}
                <h4>
-                    Already have an account ? <Link to={"login"} className='text-[#3F90FC] cursor-pointer hover:underline'>Login Here</Link>
+                    Already have an account ? <Link to={"/auth/login"} className='text-[#3F90FC] cursor-pointer hover:underline'>Login Here</Link>
                </h4>
           </div>
      )

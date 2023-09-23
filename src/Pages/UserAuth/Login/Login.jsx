@@ -37,7 +37,7 @@ export default function Login() {
 
                {/* register toggle */}
                <h4>
-                    Don’t have an account? <Link to={"register"} className='text-[#3F90FC] cursor-pointer hover:underline'>Create an account</Link>
+                    Don’t have an account? <Link to={"/auth/register"} className='text-[#3F90FC] cursor-pointer hover:underline'>Create an account</Link>
                </h4>
           </div>
      )
